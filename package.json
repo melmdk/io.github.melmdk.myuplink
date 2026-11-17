@@ -1,18 +1,12 @@
 {
-  "name": "com.myuplink",
+  "name": "io.github.melmdk.myuplink",
   "version": "1.0.0",
   "main": "app.js",
   "engines": {
     "node": ">=12.0.0"
   },
   "scripts": {
-    "lint": "eslint --ext .js,.ts --ignore-path .gitignore .",
-    "env:dev": "bash automation/target-environment.sh dev",
-    "env:stage": "bash automation/target-environment.sh stage",
-    "env:prod": "bash automation/target-environment.sh prod",
-    "preflight:dev": "node automation/preflight-publish.js dev",
-    "preflight:stage": "node automation/preflight-publish.js stage",
-    "preflight:prod": "node automation/preflight-publish.js prod"
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
   },
   "devDependencies": {
     "@tsconfig/node12": "^1.0.11",

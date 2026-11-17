@@ -1,0 +1,825 @@
+{
+  "name": "NIBE VVM 310",
+  "icon": "NibeS1255.svg",
+  "basedOnHelp": "The basedOn is the deviceId of a device you want to use the myUplink dump for to create the dump",
+  "basedOn": "",
+  "filterHelp": "F-series indoor module VVM 310 (firmware nibe-e6); outdoor unit values (EB101) come through it",
+  "filter": {
+    "deviceName": ".*VVM 310.*"
+  },
+  "capabilities": [
+    "measure_frequency.compressor",
+    "measure_power.addHeat",
+    "measure_power.consumption",
+    "measure_temperature",
+    "measure_temperature.addHeat",
+    "measure_temperature.calcSupply",
+    "measure_temperature.hw6",
+    "measure_temperature.hw7",
+    "measure_temperature.ouReturn",
+    "measure_temperature.ouSupply",
+    "measure_temperature.outdoor11",
+    "measure_temperature.return14",
+    "measure_temperature.supply4",
+    "onoff.hwBoost1"
+  ],
+  "onChange": {},
+  "onCreated": {},
+  "capTable": {
+    "40004": "measure_temperature",
+    "40008": "measure_temperature.supply4",
+    "40012": "measure_temperature.return14",
+    "40013": "measure_temperature.hw6",
+    "40014": "measure_temperature.hw7",
+    "40067": "measure_temperature.outdoor11",
+    "50004": "onoff.hwBoost1",
+    "43009": "measure_temperature.calcSupply",
+    "40121": "measure_temperature.addHeat",
+    "44058": "measure_temperature.ouSupply",
+    "44055": "measure_temperature.ouReturn",
+    "44701": "measure_frequency.compressor",
+    "32486": "measure_power.consumption",
+    "43084": "measure_power.addHeat"
+  },
+  "settingsTable": {
+    "40940": "setting_781"
+  },
+  "statusTable": {
+    "44064": "status_1965",
+    "49994": "status_55000",
+    "49995": "status_55021",
+    "49993": "status_55027"
+  },
+  "ignoredTable": {},
+  "unCommonTable": [
+    32486,
+    40004,
+    40008,
+    40012,
+    40013,
+    40014,
+    40067,
+    40121,
+    40940,
+    40941,
+    43009,
+    43084,
+    43389,
+    44055,
+    44058,
+    44064,
+    44069,
+    44071,
+    44073,
+    44701,
+    47041,
+    48132,
+    49993,
+    49994,
+    49995,
+    50004,
+    50312
+  ],
+  "optionalPoints": [],
+  "devPointTable": {
+    "32486": {
+      "parameterName": {
+        "en": "EL Current power consumption",
+        "sv": "EL Current power consumption",
+        "de": "EL Current power consumption",
+        "da": "EL Current power consumption"
+      },
+      "parameterUnit": "kW",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.001",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40004": {
+      "parameterName": {
+        "en": "Outdoor temp­erature",
+        "sv": "Utom­hus­temp­eratur",
+        "de": "Außen­tempe­ratur",
+        "da": "Uden­dørstem­peratur"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40008": {
+      "parameterName": {
+        "en": "Supply line (BT2)",
+        "sv": "Fram­led­ning (BT2)",
+        "de": "Vorlauf (BT2)",
+        "da": "Fremløb (BT2)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40012": {
+      "parameterName": {
+        "en": "Return line (BT3)",
+        "sv": "Retur­led­ning (BT3)",
+        "de": "Rück­lauf (BT3)",
+        "da": "Retur­løb (BT3)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40013": {
+      "parameterName": {
+        "en": "Hot water top (BT7)",
+        "sv": "Varm­vatten topp (BT7)",
+        "de": "Brauch­wasser oben (BT7)",
+        "da": "Varmt­vand top (BT7)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40014": {
+      "parameterName": {
+        "en": "Hot water char­ging (BT6)",
+        "sv": "Varm­vatten ladd­ning (BT6)",
+        "de": "Brauch­wasser­berei­tung (BT6)",
+        "da": "Varmt­vand ladning (BT6)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40067": {
+      "parameterName": {
+        "en": "Average outdoor temp (BT1)",
+        "sv": "Medel­ute­temp­eratur (BT1)",
+        "de": "Mittl. Außen­luft­temp. (BT1)",
+        "da": "Middel udetem­peratur (BT1)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40121": {
+      "parameterName": {
+        "en": "Add. heat (BT63)",
+        "sv": "Tillsats (BT63)",
+        "de": "Zusatz­heizung (BT63)",
+        "da": "Tilskud (BT63)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "40940": {
+      "parameterName": {
+        "en": "current value",
+        "sv": "aktuellt värde",
+        "de": "aktueller Wert",
+        "da": "aktuel værdi"
+      },
+      "parameterUnit": "DM",
+      "writable": true,
+      "minValue": -30000.0,
+      "maxValue": 30000.0,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "100",
+      "type": 1
+    },
+    "40941": {
+      "parameterName": {
+        "en": "Degree minutes",
+        "sv": "Grad­minuter",
+        "de": "Grad­minuten",
+        "da": "Gradmi­nutter"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "43009": {
+      "parameterName": {
+        "en": "Calcu­lated supply climate system 1",
+        "sv": "Beräk­nad fram­led­ning klimat­system 1",
+        "de": "Berech­neter Vorlauf Klima­tisier­ungs­system 1",
+        "da": "Bereg­net fremløb klima­anlæg 1"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "43084": {
+      "parameterName": {
+        "en": "Power inter­nal add. heat",
+        "sv": "Effekt in­tern till­sats",
+        "de": "Leis­tung interne Zusatz­heizung",
+        "da": "Effekt internt tilskud"
+      },
+      "parameterUnit": "kW",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.01",
+      "stepValue": "1",
+      "type": 1
+    },
+    "43389": {
+      "parameterName": {
+        "en": "Status, temp lux mode",
+        "sv": "Status till­fälligt lyx­läge",
+        "de": "Status vorüber­gehen­der Luxus­modus",
+        "da": "Status midler­tidig luksus­indstil­ling"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44055": {
+      "parameterName": {
+        "en": "Return line (EB101-BT3)",
+        "sv": "Retur­led­ning (EB101-BT3)",
+        "de": "Rück­lauf (EB101-BT3)",
+        "da": "Retur­løb (EB101-BT3)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44058": {
+      "parameterName": {
+        "en": "Supply line (EB101-BT12)",
+        "sv": "Fram­ledning (EB101-BT12)",
+        "de": "Vorlauf (EB101-BT12)",
+        "da": "Fremløb (EB101-BT12)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44064": {
+      "parameterName": {
+        "en": "Status com­pressor (EB101)",
+        "sv": "Status kom­pressor (EB101)",
+        "de": "Status Ver­dichter (EB101)",
+        "da": "Status kompres­sor (EB101)"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "20",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "40",
+          "text": {
+            "en": "Starting",
+            "sv": "Startar",
+            "de": "Startet",
+            "da": "Starter"
+          },
+          "icon": null
+        },
+        {
+          "value": "60",
+          "text": {
+            "en": "Operating",
+            "sv": "Kör",
+            "de": "Ist aktiv",
+            "da": "Kør"
+          },
+          "icon": null
+        },
+        {
+          "value": "100",
+          "text": {
+            "en": "Stopping",
+            "sv": "Stannar",
+            "de": "Stoppt",
+            "da": "Standser"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "44069": {
+      "parameterName": {
+        "en": "number of starts:",
+        "sv": "antal starter:",
+        "de": "Anzahl der Starts:",
+        "da": "antal starter:"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44071": {
+      "parameterName": {
+        "en": "total operating time:",
+        "sv": "total drifttid:",
+        "de": "Ges.betr.zeit:",
+        "da": "total driftstid:"
+      },
+      "parameterUnit": "hrs",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44073": {
+      "parameterName": {
+        "en": "- of which hot water:",
+        "sv": "- av vilken varmvatten:",
+        "de": "- davon Brauchwasser:",
+        "da": "- af hvilket varmt vand:"
+      },
+      "parameterUnit": "hrs",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44701": {
+      "parameterName": {
+        "en": "Current com­pressor fre­quency (EB101)",
+        "sv": "Aktuell kom­pressor­frek­vens (EB101)",
+        "de": "Aktu­elle Ver­dichter­fre­quenz (EB101)",
+        "da": "Aktuel kompres­sorfre­kvens (EB101)"
+      },
+      "parameterUnit": "Hz",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "47041": {
+      "parameterName": {
+        "en": "Hot water demand",
+        "sv": "Varm­vatten­behov",
+        "de": "Brauch­wasser­bedarf",
+        "da": "Varmt­vands­behov"
+      },
+      "parameterUnit": "",
+      "writable": true,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Economy",
+            "sv": "Ekonomi",
+            "de": "Spar­modus",
+            "da": "Økonomi"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "Normal",
+            "sv": "Normal",
+            "de": "Normal",
+            "da": "Normal"
+          },
+          "icon": null
+        },
+        {
+          "value": "2",
+          "text": {
+            "en": "Lux",
+            "sv": "Lyx",
+            "de": "Luxus",
+            "da": "Luksus"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "48132": {
+      "parameterName": {
+        "en": "Hot water boost",
+        "sv": "Varm­vatten­boost",
+        "de": "Brauch­wasser-Boost",
+        "da": "Varmt­vands­boost"
+      },
+      "parameterUnit": "",
+      "writable": true,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "4",
+          "text": {
+            "en": "One-time in­crease",
+            "sv": "En­gångs­höjning",
+            "de": "Ein­malige Er­höhung",
+            "da": "Engangs­forøgelse"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "3 hr",
+            "sv": "3t",
+            "de": "3Std",
+            "da": "3t"
+          },
+          "icon": null
+        },
+        {
+          "value": "2",
+          "text": {
+            "en": "6 hr",
+            "sv": "6t",
+            "de": "6Std",
+            "da": "6t"
+          },
+          "icon": null
+        },
+        {
+          "value": "3",
+          "text": {
+            "en": "12 hr",
+            "sv": "12t",
+            "de": "12Std",
+            "da": "12t"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "49993": {
+      "parameterName": {
+        "en": "Int elec add heat",
+        "sv": "Intern eltill­sats",
+        "de": "Interne elek­trische Zusatz­heizung",
+        "da": "Internt el-tilskud"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Alarm",
+            "sv": "Larm",
+            "de": "Alarm",
+            "da": "Alarm"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "Alarm",
+            "sv": "Larm",
+            "de": "Alarm",
+            "da": "Alarm"
+          },
+          "icon": null
+        },
+        {
+          "value": "2",
+          "text": {
+            "en": "Active",
+            "sv": "Aktiv",
+            "de": "Aktiv",
+            "da": "Aktiv"
+          },
+          "icon": null
+        },
+        {
+          "value": "3",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "4",
+          "text": {
+            "en": "Blocked",
+            "sv": "Blockerad",
+            "de": "Blo­ckiert",
+            "da": "Bloke­ret"
+          },
+          "icon": null
+        },
+        {
+          "value": "5",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "6",
+          "text": {
+            "en": "Active",
+            "sv": "Aktiv",
+            "de": "Aktiv",
+            "da": "Aktiv"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "49994": {
+      "parameterName": {
+        "en": "Prior­ity",
+        "sv": "Prio",
+        "de": "Prio",
+        "da": "Prio"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "10",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "20",
+          "text": {
+            "en": "Hot water",
+            "sv": "Varm­vatten",
+            "de": "Brauch­wasser",
+            "da": "Varmt­vand"
+          },
+          "icon": null
+        },
+        {
+          "value": "30",
+          "text": {
+            "en": "Heating",
+            "sv": "Värme",
+            "de": "Heizung",
+            "da": "Varme"
+          },
+          "icon": null
+        },
+        {
+          "value": "40",
+          "text": {
+            "en": "Pool",
+            "sv": "Pool",
+            "de": "Pool",
+            "da": "Pool"
+          },
+          "icon": null
+        },
+        {
+          "value": "41",
+          "text": {
+            "en": "Pool 2",
+            "sv": "Pool 2",
+            "de": "Pool 2",
+            "da": "Pool 2"
+          },
+          "icon": null
+        },
+        {
+          "value": "50",
+          "text": {
+            "en": "Trans­fer",
+            "sv": "Transfer",
+            "de": "Trans­fer",
+            "da": "Trans­fer"
+          },
+          "icon": null
+        },
+        {
+          "value": "60",
+          "text": {
+            "en": "Cooling",
+            "sv": "Kyla",
+            "de": "Kühlung",
+            "da": "Køling"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "49995": {
+      "parameterName": {
+        "en": "Pump: Heating medium (EB100-GP1)",
+        "sv": "Pump: Värme­bärare (EB100-GP1)",
+        "de": "Pumpe: Hei­zungs­me­di­um (EB100-GP1)",
+        "da": "Pumpe: Varmebærer (EB100-GP1)"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "On",
+            "sv": "Till",
+            "de": "Ein",
+            "da": "Til"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "50004": {
+      "parameterName": {
+        "en": "Tempo­rary lux",
+        "sv": "Tillfällig lyx",
+        "de": "Vorüber­gehen­der Luxus",
+        "da": "Midlt. luksus"
+      },
+      "parameterUnit": "",
+      "writable": true,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "off",
+            "sv": "från",
+            "de": "aus",
+            "da": "fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "on",
+            "sv": "till",
+            "de": "ein",
+            "da": "til"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "50312": {
+      "parameterName": {
+        "en": "Heat capacity (EB101)",
+        "sv": "Heat capacity (EB101)",
+        "de": "Heat capacity (EB101)",
+        "da": "Heat capacity (EB101)"
+      },
+      "parameterUnit": "kW",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.001",
+      "stepValue": "1",
+      "type": 1
+    }
+  }
+}
