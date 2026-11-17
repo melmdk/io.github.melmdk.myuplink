@@ -20,6 +20,7 @@
     "measure_temperature.outdoor11",
     "measure_temperature.return14",
     "measure_temperature.supply4",
+    "nibe_value.priority",
     "onoff.hwBoost1"
   ],
   "onChange": {},
@@ -38,14 +39,14 @@
     "44055": "measure_temperature.ouReturn",
     "44701": "measure_frequency.compressor",
     "32486": "measure_power.consumption",
-    "43084": "measure_power.addHeat"
+    "43084": "measure_power.addHeat",
+    "49994": "nibe_value.priority"
   },
   "settingsTable": {
     "40940": "setting_781"
   },
   "statusTable": {
     "44064": "status_1965",
-    "49994": "status_55000",
     "49995": "status_55021",
     "49993": "status_55027"
   },

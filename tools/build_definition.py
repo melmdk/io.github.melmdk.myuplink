@@ -44,9 +44,10 @@ DEVICES = [
             "44701": "measure_frequency.compressor",
             "32486": "measure_power.consumption",
             "43084": "measure_power.addHeat",
+            "49994": "nibe_value.priority",            # 10 off, 20 hot water, 30 heating (numeric, for logging)
         },
         "settings": {"40940": "setting_781"},
-        "status": {"44064": "status_1965", "49994": "status_55000", "49995": "status_55021", "49993": "status_55027"},
+        "status": {"44064": "status_1965", "49995": "status_55021", "49993": "status_55027"},
     },
     {
         "file": "NibeF2120.json", "name": "NIBE F2120",

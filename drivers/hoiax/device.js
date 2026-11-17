@@ -75,6 +75,16 @@ class genericDevice extends OAuth2Device {
       //   | };
       //   | await this.setCapabilityOptions(capabilityName, options).catch(this.error);
 
+      // Capabilities added to a definition after the device was paired
+      // (optional points are decided at pairing and left alone)
+      const optionalPoints = this.deviceDefinition.optionalPoints || [];
+      for (const [pointId, capabilityName] of Object.entries(this.deviceDefinition.capTable || {})) {
+        if (!optionalPoints.includes(pointId) && !this.hasCapability(capabilityName)) {
+          this.log(`Adding capability ${capabilityName} from the device definition`);
+          await this.addCapability(capabilityName);
+        }
+      }
+
       await this.oAuth2Client.initDevice(this, this.deviceDefinition);
 
       // Initialization complete
