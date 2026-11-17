@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns:serif="http://www.serif.com/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1024 1024"
+	 style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+	.st1{stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+</style>
+<g transform="matrix(0.24,0,0,0.24,0,0)">
+	<g id="Layer-1" transform="matrix(4.16667,0,0,4.16667,0,0)" serif:id="Layer 1">
+		<g transform="matrix(1,0,0,1,75,130.88)">
+			<path class="st0" d="M68.3,124.4h749.8c19.5,0,35.2,15.8,35.2,35.2v443.7c0,19-15.4,34.4-34.4,34.4H55.1
+				c-19,0-34.4-15.4-34.4-34.4V172C20.7,145.7,42,124.4,68.3,124.4z"/>
+		</g>
+		<g transform="matrix(1,0,0,1,131.571,130.889)">
+			<path class="st0" d="M540.4,124.5h220.6c19.7,0,35.7,16,35.7,35.7V603c0,19.3-15.6,34.9-34.9,34.9H540.4V124.5z"/>
+		</g>
+		<g transform="matrix(1,0,0,1,157.001,86.0556)">
+			<path class="st1" d="M739.7,169.2l-758.3,0c-23.6,0-42.7,23.4-42.7,52.3v91.6h832.6V208C771.3,186.6,757.2,169.2,739.7,169.2z
+				 M558.8,241.2v-47h162.6v47"/>
+		</g>
+	</g>
+</g>
+</svg>
