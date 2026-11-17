@@ -20,8 +20,8 @@ Pair it with **Devices → + → myUplink F-series (unofficial) → NIBE**.
   and charging (BT6), calculated supply, additional heat (BT63), outdoor unit supply/return
 - Compressor frequency, current power consumption and immersion heater power (both in kW)
 - Switch: temporary lux (more hot water)
-- Settings page: degree minutes, compressor status, priority, heating medium pump, electric
-  additional heat
+- Priority (10 off, 20 hot water, 30 heating) as a numeric value, so it can be logged
+- Settings page: degree minutes, compressor status, heating medium pump, electric additional heat
 - Further points (hot water demand, hot water boost, operating hours, starts) through the
   app's flow cards
 
