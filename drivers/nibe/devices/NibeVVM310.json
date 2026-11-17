@@ -1,9 +1,8 @@
 {
   "name": "NIBE VVM 310",
   "icon": "NibeS1255.svg",
-  "basedOnHelp": "The basedOn is the deviceId of a device you want to use the myUplink dump for to create the dump",
   "basedOn": "",
-  "filterHelp": "F-series indoor module VVM 310 (firmware nibe-e6); outdoor unit values (EB101) come through it",
+  "filterHelp": "F-series indoor module VVM 310 (firmware nibe-e6)",
   "filter": {
     "deviceName": ".*VVM 310.*"
   },
@@ -61,16 +60,12 @@
     40067,
     40121,
     40940,
-    40941,
     43009,
     43084,
     43389,
     44055,
     44058,
     44064,
-    44069,
-    44071,
-    44073,
     44701,
     47041,
     48132,
@@ -226,22 +221,6 @@
       "stepValue": "100",
       "type": 1
     },
-    "40941": {
-      "parameterName": {
-        "en": "Degree minutes",
-        "sv": "Grad­minuter",
-        "de": "Grad­minuten",
-        "da": "Gradmi­nutter"
-      },
-      "parameterUnit": "",
-      "writable": false,
-      "minValue": null,
-      "maxValue": null,
-      "enumValues": [],
-      "scaleValue": "0.1",
-      "stepValue": "1",
-      "type": 1
-    },
     "43009": {
       "parameterName": {
         "en": "Calcu­lated supply climate system 1",
@@ -378,54 +357,6 @@
       "scaleValue": "1",
       "stepValue": "1",
       "type": 2
-    },
-    "44069": {
-      "parameterName": {
-        "en": "number of starts:",
-        "sv": "antal starter:",
-        "de": "Anzahl der Starts:",
-        "da": "antal starter:"
-      },
-      "parameterUnit": "",
-      "writable": false,
-      "minValue": null,
-      "maxValue": null,
-      "enumValues": [],
-      "scaleValue": "1",
-      "stepValue": "1",
-      "type": 1
-    },
-    "44071": {
-      "parameterName": {
-        "en": "total operating time:",
-        "sv": "total drifttid:",
-        "de": "Ges.betr.zeit:",
-        "da": "total driftstid:"
-      },
-      "parameterUnit": "hrs",
-      "writable": false,
-      "minValue": null,
-      "maxValue": null,
-      "enumValues": [],
-      "scaleValue": "1",
-      "stepValue": "1",
-      "type": 1
-    },
-    "44073": {
-      "parameterName": {
-        "en": "- of which hot water:",
-        "sv": "- av vilken varmvatten:",
-        "de": "- davon Brauchwasser:",
-        "da": "- af hvilket varmt vand:"
-      },
-      "parameterUnit": "hrs",
-      "writable": false,
-      "minValue": null,
-      "maxValue": null,
-      "enumValues": [],
-      "scaleValue": "1",
-      "stepValue": "1",
-      "type": 1
     },
     "44701": {
       "parameterName": {

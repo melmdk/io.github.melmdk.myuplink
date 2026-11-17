@@ -9,7 +9,8 @@ F-series:
 
 | Device | Definition | Notes |
 |---|---|---|
-| NIBE VVM 310 (with F2120 outdoor unit) | `drivers/nibe/devices/NibeVVM310.json` | firmware `nibe-e6`; the outdoor unit's values (EB101) come through the indoor module |
+| NIBE VVM 310 | `drivers/nibe/devices/NibeVVM310.json` | firmware `nibe-e6` |
+| NIBE F2120 (outdoor unit, EB101) | `drivers/nibe/devices/NibeF2120.json` | reported through the VVM 310; offered as an additional device |
 
 Pair it with **Devices → + → myUplink F-series (unofficial) → NIBE**.
 
@@ -24,12 +25,20 @@ Pair it with **Devices → + → myUplink F-series (unofficial) → NIBE**.
 - Further points (hot water demand, hot water boost, operating hours, starts) through the
   app's flow cards
 
+The F2120 device exposes compressor diagnostics: current and requested frequency, outdoor,
+evaporator, discharge, liquid line, suction gas and injection temperatures, low/high pressure
+(saturation temperature) and low pressure in bar, fan speed, defrosting, degree minutes, charge
+pump speed, compressor starts and operating hours.
+
 Changing values from Homey may require a myUplink premium subscription.
 
 ## Changes from the original
 
 - App id and name changed so it installs next to (and is never overwritten by) the official app
-- Added `NibeVVM310.json` and the capability titles it needs in `app.json`
+- Added `NibeVVM310.json` and `NibeF2120.json`, the capability titles they need and a generic
+  numeric capability `nibe_value` in `app.json`
+- A definition marked `"additional": true` is offered next to the first matching definition, so
+  one myUplink device can be paired as two Homey devices (`lib/myUplinkOAuth2Client.js`)
 - Removed the publisher's environment variants (`configuration/`)
 - Added `tools/` (see below)
 
@@ -51,7 +60,7 @@ Changing values from Homey may require a myUplink premium subscription.
 1. Pair the device once with the **Generic Device** driver so Homey holds a login.
 2. `tools/fetch_points.py` (run on the Homey host) dumps the device's points in all languages.
 3. Adapt the point selection in `tools/build_definition.py` and run it; it writes the definition
-   file and adds the capability titles to `app.json`.
+   files and adds the capability titles to `app.json`.
 4. `npm ci`, then `homey app validate` and `homey app install`.
 
 A point can be in `capTable` or in `statusTable`/`settingsTable`, not both.

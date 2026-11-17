@@ -1,0 +1,576 @@
+{
+  "name": "NIBE F2120",
+  "icon": "NibeS1255.svg",
+  "basedOn": "",
+  "filterHelp": "F2120 outdoor unit (EB101) reported through a VVM 310; offered as an additional device",
+  "filter": {
+    "deviceName": ".*VVM 310.*"
+  },
+  "capabilities": [
+    "measure_frequency.compressor",
+    "measure_frequency.requested",
+    "measure_pressure.low",
+    "measure_temperature.discharge",
+    "measure_temperature.evaporator",
+    "measure_temperature.highPressure",
+    "measure_temperature.injection",
+    "measure_temperature.liquidLine",
+    "measure_temperature.lowPressure",
+    "measure_temperature.ouOutdoor",
+    "measure_temperature.suctionGas",
+    "nibe_value.chargePump",
+    "nibe_value.defrosting",
+    "nibe_value.degreeMinutes",
+    "nibe_value.fanSpeed",
+    "nibe_value.hours",
+    "nibe_value.hoursHotWater",
+    "nibe_value.starts"
+  ],
+  "onChange": {},
+  "onCreated": {},
+  "capTable": {
+    "44701": "measure_frequency.compressor",
+    "44775": "measure_frequency.requested",
+    "44362": "measure_temperature.ouOutdoor",
+    "44363": "measure_temperature.evaporator",
+    "44059": "measure_temperature.discharge",
+    "44060": "measure_temperature.liquidLine",
+    "44061": "measure_temperature.suctionGas",
+    "41164": "measure_temperature.injection",
+    "41162": "measure_temperature.lowPressure",
+    "41163": "measure_temperature.highPressure",
+    "44700": "measure_pressure.low",
+    "41002": "nibe_value.fanSpeed",
+    "44703": "nibe_value.defrosting",
+    "40941": "nibe_value.degreeMinutes",
+    "44396": "nibe_value.chargePump",
+    "44069": "nibe_value.starts",
+    "44071": "nibe_value.hours",
+    "44073": "nibe_value.hoursHotWater"
+  },
+  "settingsTable": {},
+  "statusTable": {
+    "44064": "status_1965"
+  },
+  "ignoredTable": {},
+  "unCommonTable": [
+    40941,
+    41002,
+    41162,
+    41163,
+    41164,
+    43389,
+    44059,
+    44060,
+    44061,
+    44064,
+    44069,
+    44071,
+    44073,
+    44362,
+    44363,
+    44396,
+    44700,
+    44701,
+    44703,
+    44775,
+    47041,
+    48132,
+    50312
+  ],
+  "optionalPoints": [],
+  "devPointTable": {
+    "40941": {
+      "parameterName": {
+        "en": "Degree minutes",
+        "sv": "Grad­minuter",
+        "de": "Grad­minuten",
+        "da": "Gradmi­nutter"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "41002": {
+      "parameterName": {
+        "en": "Fan speed (EB101)",
+        "sv": "Fläkt­hastig­het (EB101)",
+        "de": "Venti­lator­dreh­zahl (EB101)",
+        "da": "Venti­lator­hastig­hed (EB101)"
+      },
+      "parameterUnit": "rpm",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "41162": {
+      "parameterName": {
+        "en": "Low pres­sure (EB101-BP8)",
+        "sv": "Låg­tryck (EB101-BP8)",
+        "de": "Nie­der­druck (EB101-BP8)",
+        "da": "Lavtryk (EB101-BP8)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "41163": {
+      "parameterName": {
+        "en": "High pres­sure (EB101-BP9)",
+        "sv": "Hög­tryck (EB101-BP9)",
+        "de": "Hoch­druck (EB101-BP9)",
+        "da": "Højtryk (EB101-BP9)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "41164": {
+      "parameterName": {
+        "en": "Injec­tion (EB101-BT81)",
+        "sv": "In­sprut­ning (EB101-BT81)",
+        "de": "Ein­sprit­zung (EB101-BT81)",
+        "da": "Ind­sprøjt­ning (EB101-BT81)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "43389": {
+      "parameterName": {
+        "en": "Status, temp lux mode",
+        "sv": "Status till­fälligt lyx­läge",
+        "de": "Status vorüber­gehen­der Luxus­modus",
+        "da": "Status midler­tidig luksus­indstil­ling"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44059": {
+      "parameterName": {
+        "en": "Dis­charge (EB101-BT14)",
+        "sv": "Het­gas (EB101-BT14)",
+        "de": "Heißgas (EB101-BT14)",
+        "da": "Varmgas (EB101-BT14)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44060": {
+      "parameterName": {
+        "en": "Liquid line (EB101-BT15)",
+        "sv": "Vätske­led­ning (EB101-BT15)",
+        "de": "Flüssig­keits­leitung (EB101-BT15)",
+        "da": "Væske­ledning (EB101-BT15)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44061": {
+      "parameterName": {
+        "en": "Suction gas (EB101-BT17)",
+        "sv": "Sug­gas (EB101-BT17)",
+        "de": "Sauggas (EB101-BT17)",
+        "da": "Sugegas (EB101-BT17)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44064": {
+      "parameterName": {
+        "en": "Status com­pressor (EB101)",
+        "sv": "Status kom­pressor (EB101)",
+        "de": "Status Ver­dichter (EB101)",
+        "da": "Status kompres­sor (EB101)"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "20",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "40",
+          "text": {
+            "en": "Starting",
+            "sv": "Startar",
+            "de": "Startet",
+            "da": "Starter"
+          },
+          "icon": null
+        },
+        {
+          "value": "60",
+          "text": {
+            "en": "Operating",
+            "sv": "Kör",
+            "de": "Ist aktiv",
+            "da": "Kør"
+          },
+          "icon": null
+        },
+        {
+          "value": "100",
+          "text": {
+            "en": "Stopping",
+            "sv": "Stannar",
+            "de": "Stoppt",
+            "da": "Standser"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "44069": {
+      "parameterName": {
+        "en": "number of starts:",
+        "sv": "antal starter:",
+        "de": "Anzahl der Starts:",
+        "da": "antal starter:"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44071": {
+      "parameterName": {
+        "en": "total operating time:",
+        "sv": "total drifttid:",
+        "de": "Ges.betr.zeit:",
+        "da": "total driftstid:"
+      },
+      "parameterUnit": "hrs",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44073": {
+      "parameterName": {
+        "en": "- of which hot water:",
+        "sv": "- av vilken varmvatten:",
+        "de": "- davon Brauchwasser:",
+        "da": "- af hvilket varmt vand:"
+      },
+      "parameterUnit": "hrs",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44362": {
+      "parameterName": {
+        "en": "Outd temp­erature (EB101-BT28)",
+        "sv": "Ute­temp­eratur (EB101-BT28)",
+        "de": "Außen­luft­tempe­ratur (EB101-BT28)",
+        "da": "Udetem­peratur (EB101-BT28)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44363": {
+      "parameterName": {
+        "en": "Evap­orator (EB101-BT16)",
+        "sv": "För­ångare (EB101-BT16)",
+        "de": "Ver­dampfer (EB101-BT16)",
+        "da": "Fordam­per (EB101-BT16)"
+      },
+      "parameterUnit": "°C",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44396": {
+      "parameterName": {
+        "en": "Charge pump speed (GP12)",
+        "sv": "Ladd­pumps­hastig­het (GP12)",
+        "de": "Lade­pumpen­dreh­zahl (GP12)",
+        "da": "Ladepum­pehas­tighed (GP12)"
+      },
+      "parameterUnit": "%",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44700": {
+      "parameterName": {
+        "en": "Low pres­sure (EB101-BP8)",
+        "sv": "Låg­tryck (EB101-BP8)",
+        "de": "Nieder­druck (EB101-BP8)",
+        "da": "Lavtryk (EB101-BP8)"
+      },
+      "parameterUnit": "bar",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44701": {
+      "parameterName": {
+        "en": "Current com­pressor fre­quency (EB101)",
+        "sv": "Aktuell kom­pressor­frek­vens (EB101)",
+        "de": "Aktu­elle Ver­dichter­fre­quenz (EB101)",
+        "da": "Aktuel kompres­sorfre­kvens (EB101)"
+      },
+      "parameterUnit": "Hz",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44703": {
+      "parameterName": {
+        "en": "Defrost­ing (EB101-EP14)",
+        "sv": "Av­frost­ning (EB101-EP14)",
+        "de": "Ent­eisung (EB101-EP14)",
+        "da": "Afrim­ning (EB101-EP14)"
+      },
+      "parameterUnit": "",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "44775": {
+      "parameterName": {
+        "en": "Re­quested com­pressor freq (EB101)",
+        "sv": "Be­gärd kom­pressor­frek­vens (EB101)",
+        "de": "An­gefor­derte Ver­dichter­fre­quenz (EB101)",
+        "da": "Begæret kompres­sorfre­kvens (EB101)"
+      },
+      "parameterUnit": "Hz",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 1
+    },
+    "47041": {
+      "parameterName": {
+        "en": "Hot water demand",
+        "sv": "Varm­vatten­behov",
+        "de": "Brauch­wasser­bedarf",
+        "da": "Varmt­vands­behov"
+      },
+      "parameterUnit": "",
+      "writable": true,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Economy",
+            "sv": "Ekonomi",
+            "de": "Spar­modus",
+            "da": "Økonomi"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "Normal",
+            "sv": "Normal",
+            "de": "Normal",
+            "da": "Normal"
+          },
+          "icon": null
+        },
+        {
+          "value": "2",
+          "text": {
+            "en": "Lux",
+            "sv": "Lyx",
+            "de": "Luxus",
+            "da": "Luksus"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "48132": {
+      "parameterName": {
+        "en": "Hot water boost",
+        "sv": "Varm­vatten­boost",
+        "de": "Brauch­wasser-Boost",
+        "da": "Varmt­vands­boost"
+      },
+      "parameterUnit": "",
+      "writable": true,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [
+        {
+          "value": "0",
+          "text": {
+            "en": "Off",
+            "sv": "Från",
+            "de": "Aus",
+            "da": "Fra"
+          },
+          "icon": null
+        },
+        {
+          "value": "4",
+          "text": {
+            "en": "One-time in­crease",
+            "sv": "En­gångs­höjning",
+            "de": "Ein­malige Er­höhung",
+            "da": "Engangs­forøgelse"
+          },
+          "icon": null
+        },
+        {
+          "value": "1",
+          "text": {
+            "en": "3 hr",
+            "sv": "3t",
+            "de": "3Std",
+            "da": "3t"
+          },
+          "icon": null
+        },
+        {
+          "value": "2",
+          "text": {
+            "en": "6 hr",
+            "sv": "6t",
+            "de": "6Std",
+            "da": "6t"
+          },
+          "icon": null
+        },
+        {
+          "value": "3",
+          "text": {
+            "en": "12 hr",
+            "sv": "12t",
+            "de": "12Std",
+            "da": "12t"
+          },
+          "icon": null
+        }
+      ],
+      "scaleValue": "1",
+      "stepValue": "1",
+      "type": 2
+    },
+    "50312": {
+      "parameterName": {
+        "en": "Heat capacity (EB101)",
+        "sv": "Heat capacity (EB101)",
+        "de": "Heat capacity (EB101)",
+        "da": "Heat capacity (EB101)"
+      },
+      "parameterUnit": "kW",
+      "writable": false,
+      "minValue": null,
+      "maxValue": null,
+      "enumValues": [],
+      "scaleValue": "0.001",
+      "stepValue": "1",
+      "type": 1
+    }
+  },
+  "additional": true
+}
