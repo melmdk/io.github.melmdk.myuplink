@@ -135,6 +135,7 @@ for dev in DEVICES:
             if cap in TITLES: opt["title"] = {"en": TITLES[cap]}
             if e["parameterUnit"]: opt["units"] = e["parameterUnit"]
             if cap.startswith("measure_power"): opt["decimals"] = 2
+            if cap.startswith("measure_pressure"): opt["decimals"] = 1  # bar, 0.1 resolution
             drv["capabilitiesOptions"][cap] = opt
 
 json.dump(app, open(f"{APP}/app.json", "w"), ensure_ascii=False, separators=(",", ":"))
